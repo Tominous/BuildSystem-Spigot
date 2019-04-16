@@ -16,5 +16,8 @@ public class Messages {
 	public static String invalidgamemode = Main.plugin.Config.getString("Messages.InvalidGamemode").replaceAll("&", "§");
 	public static String alreadyingamemode = Main.plugin.Config.getString("Messages.AlreadyInGamemode").replaceAll("&", "§");
 	public static String otheralreadyingamemode = Main.plugin.Config.getString("Messages.OtherAlreadyInGamemode").replaceAll("&", "§");
+	public static String joinmessage = Main.plugin.Config.getString("Messages.JoinMessage").replaceAll("&", "§");
+	public static String usagegamemode = Main.plugin.Config.getString("Messages.UsageGamemode").replace("&", "§");
+	public static String disconnectmessage = Main.plugin.Config.getString("Messages.DisconnectMessage").replaceAll("&", "§");
 	public static String NoPermission = Main.plugin.Config.getString("Messages.Prefix").replaceAll("&", "§") + "" + Main.plugin.Config.getString("Messages.NoPermission").replaceAll("&", "§");;
 }

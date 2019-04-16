@@ -3,6 +3,10 @@
 Messages:
   Prefix: '&8[&aBuildSystem&8] &7'
   NoPermission: '&cYou are not allowed to use this command.'
+  
+  JoinMessage: '&e[player] &7joined the server.'
+  DisconnectMessage: '&e[player] &7left the server.'
+  
   Creaitve: 'Your gamemode was changed to &eCREATIVE&7.'
   Survival: 'Your gamemode was changed to &eSURVIVAL&7.'
   Adventure: 'Your gamemode was changed to &eADVENTURE&7.'
@@ -14,5 +18,6 @@ Messages:
   ChangeOtherSpectator: 'The gamemode of &c[target] &7was changed to &eSPECTATOR&7.'
   
   InvalidGamemode: '&cThis gamemode is invalid.'
+  UsageGamemode: '&cUse /gamemode <0,1,2,3> <player>'
   AlreadyInGamemode: '&cYou are currently in this gamemode.'
   OtherAlreadyInGamemode: '&c[target] is already in this gamemode.'

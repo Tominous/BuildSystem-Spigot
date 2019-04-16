@@ -119,6 +119,8 @@ public class CMD_Gamemode implements CommandExecutor {
 					p.sendMessage(Messages.NoPermission);
 				}
 			}
+		} else {
+			p.sendMessage(Messages.prefix + Messages.usagegamemode);
 		}
 	} else {
 		//Change players gamemode through console..

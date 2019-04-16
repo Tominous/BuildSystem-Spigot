@@ -11,6 +11,8 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import de.prixix.buildsystem.commands.CMD_Gamemode;
+import de.prixix.buildsystem.listener.Disconnect_Listener;
+import de.prixix.buildsystem.listener.Join_Listener;
 
 public class Main extends JavaPlugin {
 	
@@ -23,6 +25,7 @@ public class Main extends JavaPlugin {
 		loadConfig();
 		checkVersion();
 		initializeCommands();
+		initializeEvents();
 		
 		Console.sendMessage(Messages.prefix + "The system has been loaded.");
 	}
@@ -36,6 +39,7 @@ public class Main extends JavaPlugin {
 	private void checkVersion() {
 		Console.sendMessage(Messages.prefix + "Trying to check the current version...");
 		try {
+			@SuppressWarnings("resource")
 			String out = new Scanner(new URL("http://www.prixix.tk/api/plugin_version.php?id=buildsystemspigot").openStream(), "UTF-8").useDelimiter("\\A").next();
 			if(!out.contains(getDescription().getVersion())) {
 				Console.sendMessage(Messages.prefix + "§aA new version is available.");
@@ -52,5 +56,11 @@ public class Main extends JavaPlugin {
 	
 	private void initializeCommands() {
 		this.getCommand("gamemode").setExecutor((CommandExecutor)new CMD_Gamemode());
+		this.getCommand("gm").setExecutor((CommandExecutor)new CMD_Gamemode());
+	}
+	
+	private void initializeEvents() {
+		getServer().getPluginManager().registerEvents(new Join_Listener(), this);
+		getServer().getPluginManager().registerEvents(new Disconnect_Listener(), this);
 	}
 }
