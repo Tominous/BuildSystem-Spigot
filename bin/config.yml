@@ -1,0 +1,18 @@
+# Build System by Prixix #
+
+Messages:
+  Prefix: '&8[&aBuildSystem&8] &7'
+  NoPermission: '&cYou are not allowed to use this command.'
+  Creaitve: 'Your gamemode was changed to &eCREATIVE&7.'
+  Survival: 'Your gamemode was changed to &eSURVIVAL&7.'
+  Adventure: 'Your gamemode was changed to &eADVENTURE&7.'
+  Spectator: 'Your gamemode was changed to &eSPECTATOR&7.'
+  
+  ChangeOtherSurvival: 'The gamemode of &c[target] &7was changed to &eSURVIVAL&7.'
+  ChangeOtherCreative: 'The gamemode of &c[target] &7was changed to &eCREATIVE&7.'
+  ChangeOtherAdventure: 'The gamemode of &c[target] &7was changed to &eADVENTURE&7.'
+  ChangeOtherSpectator: 'The gamemode of &c[target] &7was changed to &eSPECTATOR&7.'
+  
+  InvalidGamemode: '&cThis gamemode is invalid.'
+  AlreadyInGamemode: '&cYou are currently in this gamemode.'
+  OtherAlreadyInGamemode: '&c[target] is already in this gamemode.'

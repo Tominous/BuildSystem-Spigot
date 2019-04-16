@@ -1,0 +1,7 @@
+name: BuildSystem
+version: V1.5
+author: Prixix
+main: de.prixix.buildsystem.Main
+
+commands:
+   gamemode:
